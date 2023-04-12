@@ -10,29 +10,23 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            string name;
             Console.WriteLine("Как Вас зовут?");
-            name = Console.ReadLine();
+            string name = Console.ReadLine();
 
-            int age;
             Console.WriteLine("Сколько Вам лет?");
-            age = Convert.ToInt32(Console.ReadLine());
+            int age = Convert.ToInt32(Console.ReadLine());
 
-            string zodiacSign;
             Console.WriteLine("Какой у Вас знак зодиака?");
-            zodiacSign = Console.ReadLine();
-
-            string job;
+            string zodiacSign = Console.ReadLine();
+                    
             Console.WriteLine("Где Вы работате?");
-            job = Console.ReadLine();
+            string job = Console.ReadLine();
 
-            
             Console.WriteLine("Ваше досье:");
             Console.WriteLine($"Вас зовут {name}.");
             Console.WriteLine($"Вам {age} лет.");
             Console.WriteLine($"Вы {zodiacSign} по знаку зодиака.");
             Console.WriteLine($"Вы работаете {job}.");
-
         }
     }
 }
